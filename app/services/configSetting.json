@@ -1,0 +1,133 @@
+{
+  "Spacy": {
+    "SPACY_MODEL": "en_core_web_lg",
+    "DISABLE_COMPONENTS": [
+      "ner",
+      "tagger",
+      "parser"
+    ],
+    "TOKEN_THRESH": 10
+  },
+  "Elasticsearch": {
+    "ELASTIC_IP": "localhost",
+    "ELASTIC_PORT": 9200
+  },
+  "mongodb": {
+    "database_name": "ProdSLBConfig"
+  },
+  "GENERAL_SETTING": {
+    "SEARCH_THRESH": 1.2,
+    "REINDEX_FLAG": true,
+    "INDEX_NAME": "covid-qa"
+  },
+  "flags": {
+    "split_by_delim": false,
+    "stop_words": false,
+    "remove_punctuation": false,
+    "selective_punctuation": false,
+    "freq_words": false,
+    "rare_words": false,
+    "spell_check": false,
+    "remove_websites": true,
+    "remove_email": true,
+    "lemmatization": false,
+    "remove_html_tags": true,
+    "remove_page_no": true,
+    "remove_non_utf8": true,
+    "remove_numerics": true,
+    "show_abbreviations": false,
+    "remove_double_spaces": true,
+    "remove_single_char": true,
+    "lower_case": true,
+    "remove_newline_tab_characters": false
+  },
+  "phrase_extraction_flag": {
+    "non_transformable_phrases": true
+  },
+  "strip_punctuation_flag": {
+    "stripped_doc": true
+  },
+  "remove_args_flags": {
+    "remove_args_text": true
+  },
+  "search_query_flags": {
+    "split_by_delim": false,
+    "stop_words": true,
+    "remove_punctuation": false,
+    "selective_punctuation": false,
+    "freq_words": false,
+    "rare_words": false,
+    "spell_check": false,
+    "remove_websites": false,
+    "remove_email": false,
+    "lemmatization": false,
+    "remove_html_tags": false,
+    "remove_page_no": false,
+    "remove_non_utf8": false,
+    "remove_numerics": false,
+    "show_abbreviations": false,
+    "remove_double_spaces": false,
+    "remove_single_char": false,
+    "lower_case": false,
+    "remove_newline_tab_characters": false
+  },
+  "ner_data_config_flag": {
+    "split_by_delim": true,
+    "remove_non_utf8": false,
+    "remove_newline_tab_characters": true,
+    "remove_html_tags": true,
+    "remove_email": true,
+    "remove_websites": true,
+    "remove_single_char": false,
+    "remove_double_spaces": true,
+    "remove_unknown_symbols":true
+  },
+  "punctuation": {
+    "remove_punctuation": true
+  },
+  "query_output_processing": {
+    "stripped_doc": true,
+    "replace_underscore_whitespace": true,
+    "remove_word_containing_hash": true,
+    "remove_single_char": true,
+    "remove_alpha_numeric": true,
+    "remove_numerics": true,
+    "stop_words": true
+  },
+  "auto_correction_flags": {
+    "first_letter_heuristic": true,
+    "minimum_threshold_check": true
+  },
+  "auto_completion_flags": {
+    "remove_non_utf8": true,
+    "remove_newline_tab_characters": true,
+    "remove_html_tags": true,
+    "remove_double_spaces": true,
+    "remove_page_no": true,
+    "lower_case": true,
+    "make_one_large_corpus": true
+  },
+  "auto_completion_phraser_flags": {
+    "remove_non_utf8": true,
+    "remove_newline_tab_characters": true,
+    "remove_html_tags": true,
+    "remove_double_spaces": true,
+    "remove_page_no": true,
+    "lower_case": true,
+    "make_one_gensim_phrase_large_corpus": true
+  },
+  "did_you_mean_flags": {
+    "tokenize": true,
+    "remove_punctuation": true,
+    "remove_email": true,
+    "remove_non_utf8": false,
+    "remove_html_tags": true,
+    "remove_double_spaces": true,
+    "remove_page_no": true,
+    "lower_case": true,
+    "remove_numerics": true,
+    "remove_single_char": true,
+    "remove_tn": false,
+    "custom_patterns": true
+  }
+}
